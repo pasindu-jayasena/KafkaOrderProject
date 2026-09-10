@@ -15,6 +15,9 @@ orders = "orders.cli:main"
 [tool.setuptools.package-data]
 orders = ["schemas/*.avsc"]
 
+[tool.setuptools.packages.find]
+include = ["orders*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = ["integration: requires a running Kafka broker"]
