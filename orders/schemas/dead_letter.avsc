@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "DeadLetter",
+  "namespace": "lk.uor.orders",
+  "fields": [
+    {"name": "sourceTopic", "type": "string"},
+    {"name": "sourcePartition", "type": "int"},
+    {"name": "sourceOffset", "type": "long"},
+    {"name": "originalKey", "type": ["null", "bytes"], "default": null},
+    {"name": "originalValue", "type": ["null", "bytes"], "default": null},
+    {"name": "errorType", "type": "string"},
+    {"name": "errorMessage", "type": "string"},
+    {"name": "attempts", "type": "int"},
+    {"name": "failedAt", "type": "string"}
+  ]
+}

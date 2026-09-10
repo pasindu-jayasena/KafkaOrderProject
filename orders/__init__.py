@@ -1,0 +1,1 @@
+"""Kafka order processing assignment."""
