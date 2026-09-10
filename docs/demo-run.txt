@@ -1,0 +1,10 @@
+2026-09-10 19:51:41,707 INFO ACCEPT order=1001 price=100.00 count=1 average=100.00
+2026-09-10 19:51:41,717 WARNING RETRY order=1002 attempt=1/4 delay=0.50s reason=Simulated order service timeout
+2026-09-10 19:51:42,218 WARNING RETRY order=1002 attempt=2/4 delay=1.00s reason=Simulated order service timeout
+2026-09-10 19:51:43,224 INFO ACCEPT order=1002 price=200.00 count=2 average=150.00
+2026-09-10 19:51:43,237 WARNING DLQ source=('orders.demo.129091f32eed', 0, 2) attempts=1 reason=price must be finite and non-negative
+2026-09-10 19:51:43,246 WARNING RETRY order=1004 attempt=1/4 delay=0.50s reason=Simulated order service timeout
+2026-09-10 19:51:43,747 WARNING RETRY order=1004 attempt=2/4 delay=1.00s reason=Simulated order service timeout
+2026-09-10 19:51:44,748 WARNING RETRY order=1004 attempt=3/4 delay=2.00s reason=Simulated order service timeout
+2026-09-10 19:51:46,751 WARNING DLQ source=('orders.demo.129091f32eed', 0, 3) attempts=4 reason=Simulated order service timeout
+2026-09-10 19:51:46,764 INFO ACCEPT order=1005 price=300.00 count=3 average=200.00

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "topic": "orders.demo.129091f32eed",
+  "dlqTopic": "orders.demo.129091f32eed.dlq",
+  "summary": {
+    "accepted": 3,
+    "replay": 0,
+    "dlq": 2,
+    "count": 3,
+    "total": 600.0,
+    "average": 200.0
+  },
+  "deadLetters": [
+    {
+      "sourceTopic": "orders.demo.129091f32eed",
+      "sourcePartition": 0,
+      "sourceOffset": 2,
+      "originalKey": {
+        "encoding": "base64",
+        "data": "MTAwMw=="
+      },
+      "originalValue": {
+        "encoding": "base64",
+        "data": "CDEwMDMKSXRlbTMAACDB"
+      },
+      "errorType": "PermanentError",
+      "errorMessage": "price must be finite and non-negative",
+      "attempts": 1,
+      "failedAt": "2026-09-10T14:21:43.233554+00:00"
+    },
+    {
+      "sourceTopic": "orders.demo.129091f32eed",
+      "sourcePartition": 0,
+      "sourceOffset": 3,
+      "originalKey": {
+        "encoding": "base64",
+        "data": "MTAwNA=="
+      },
+      "originalValue": {
+        "encoding": "base64",
+        "data": "CDEwMDQKSXRlbTQAAMhD"
+      },
+      "errorType": "TemporaryError",
+      "errorMessage": "Simulated order service timeout",
+      "attempts": 4,
+      "failedAt": "2026-09-10T14:21:46.749157+00:00"
+    }
+  ]
+}
