@@ -8,5 +8,9 @@ pytest-cache-files-*/
 data/
 tmp/
 *.log
+*.log.*
+VIDEO_SCRIPT*.md
+demo-result.json
+*.db
 build/
 dist/
